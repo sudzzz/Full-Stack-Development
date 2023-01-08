@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script>
+        function loadA(){
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function(){
+              //  alert(this.readyState)
+                if(this.readyState == 4 && this.status==200){
+                    document.getElementById("result").innerHTML = this.responseText
+                }
+            }
+            xhttp.open("GET","resulttable.php",true)
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Call PHP via AJAX" onclick=loadA()>
+    <div id="result"></div>
+</body>
+</html>

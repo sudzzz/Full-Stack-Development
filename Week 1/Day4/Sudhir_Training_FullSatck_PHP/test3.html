@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Table</title>
+    <script>
+        function loadA(){
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function(){
+              //  alert(this.readyState)
+                if(this.readyState == 4 && this.status==200){
+                    var array = JSON.parse(xhttp.responseText);
+                    var x = document.createElement("table");
+                    x.setAttribute("id","myTable");
+                    x.setAttribute("border",1);
+                    document.body.appendChild(x);
+
+                    for(var i=0;i<array.length;i++){
+                        var y = document.createElement("tr");
+                        y.setAttribute("id","myTr"+i);
+                        document.getElementById("myTable").appendChild(y);
+
+                        var z1 = document.createElement("td");
+                        var t1 = document.createTextNode(array[i]['name']);
+                        z1.appendChild(t1);
+
+                        var z2 = document.createElement("td");
+                        var t2 = document.createTextNode(array[i]['location']);
+                        z2.appendChild(t2);
+
+                        var z3 = document.createElement("td");
+                        var t3 = document.createTextNode(array[i]['date']);
+                        z3.appendChild(t3);
+
+                        document.getElementById("myTr"+i).appendChild(z1);
+                        document.getElementById("myTr"+i).appendChild(z2);
+                        document.getElementById("myTr"+i).appendChild(z3);
+                    }
+                    document.getElementById("result").innerHTML = x.toString();
+                }
+            }
+            xhttp.open("GET","jsonphp.php",true)
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Call PHP via AJAX" onclick=loadA()>
+    <div id="result"></div>
+</body>
+</html>

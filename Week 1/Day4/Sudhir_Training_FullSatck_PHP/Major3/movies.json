@@ -1,0 +1,102 @@
+[
+    {
+       "movieId" : 1,
+       "movieName" : "Raazi",
+       "movieImage" : "movies/raazi.jpg"
+    },
+    {
+        "movieId" : 2,
+        "movieName" : "Chak De India",
+        "movieImage" : "movies/chak.jpg"
+     },
+     {
+        "movieId" : 3,
+        "movieName" : "Gully Boy",
+        "movieImage" : "movies/gully.jpg"
+     },
+     {
+        "movieId" : 4,
+        "movieName" : "Bachhan Pandey",
+        "movieImage" : "movies/bachhan.jpg"
+     },
+     {
+        "movieId" : 5,
+        "movieName" : "Batla House",
+        "movieImage" : "movies/batla.jpg"
+     },
+     {
+        "movieId" : 6,
+        "movieName" : "Shershaah",
+        "movieImage" : "movies/sher.jpg"
+     },
+     {
+        "movieId" : 7,
+        "movieName" : "Bell Bottom",
+        "movieImage" : "movies/bell.jpg"
+     },
+     {
+        "movieId" : 8,
+        "movieName" : "Good Newws",
+        "movieImage" : "movies/good.jpg"
+     },
+     {
+        "movieId" : 9,
+        "movieName" : "Jalsa",
+        "movieImage" : "movies/jalsa.jpg"
+     },
+     {
+        "movieId" : 10,
+        "movieName" : "Section 375",
+        "movieImage" : "movies/section.jpg"
+     },
+     {
+        "movieId" : 11,
+        "movieName" : "Fanaa",
+        "movieImage" : "movies/fanaa.jpg"
+     },
+     {
+        "movieId" : 12,
+        "movieName" : "Kesari",
+        "movieImage" : "movies/kesari.jpg"
+     },
+     {
+        "movieId" : 13,
+        "movieName" : "Hindi Medium",
+        "movieImage" : "movies/hindi.jpg"
+     },
+     {
+        "movieId" : 14,
+        "movieName" : "Trapped",
+        "movieImage" : "movies/trapped.jpg"
+     },
+     {
+        "movieId" : 15,
+        "movieName" : "Chehre",
+        "movieImage" : "movies/chere.jpg"
+     },
+     {
+        "movieId" : 16,
+        "movieName" : "Toofaan",
+        "movieImage" : "movies/toofan.jpg"
+     },
+     {
+        "movieId" : 17,
+        "movieName" : "Ram Setu",
+        "movieImage" : "movies/ram.jpg"
+     },
+     {
+        "movieId" : 18,
+        "movieName" : "Dybbuk",
+        "movieImage" : "movies/dybbuk.jpg"
+     },
+     {
+        "movieId" : 19,
+        "movieName" : "Thank God",
+        "movieImage" : "movies/thank.jpg"
+     },
+     {
+        "movieId" : 20,
+        "movieName" : "Kalank",
+        "movieImage" : "movies/kalank.jpg"
+     }    
+]

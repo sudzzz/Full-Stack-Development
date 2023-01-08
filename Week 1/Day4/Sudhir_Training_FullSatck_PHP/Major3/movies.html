@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Movies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function loadA(){
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function(){
+                
+                if(this.readyState == 4 && this.status==200){
+                    
+                    var array = JSON.parse(xhttp.responseText);
+                    var x = document.createElement("table");
+                    x.setAttribute("id","myTable");
+                    x.setAttribute("border",1);
+                    document.body.appendChild(x);
+                    //alert(array.length);
+                    for(var i=0;i<array.length;i++){
+                        var y = document.createElement("tr");
+                        y.setAttribute("id","myTr"+i);
+                        document.getElementById("myTable").appendChild(y);
+
+                        var z1 = document.createElement("td");
+                        var t1 = document.createTextNode(array[i]['movieId']);
+                        z1.appendChild(t1);
+
+                        var z2 = document.createElement("td");
+                        var t2 = document.createTextNode(array[i]['movieName']);
+                        z2.appendChild(t2);
+
+                        var z3 = document.createElement("td");
+                        var img = document.createElement("img");
+                        img.setAttribute("src",array[i]['movieImage']);
+                        z3.appendChild(img);
+        
+                        document.getElementById("myTr"+i).appendChild(z1);
+                        document.getElementById("myTr"+i).appendChild(z2);
+                        document.getElementById("myTr"+i).appendChild(z3);
+                    }
+                }
+            }
+            xhttp.open("GET","movies.json",true)
+            xhttp.send();
+        }
+    </script>
+</head>
+<body onload=loadA()>
+    <div class="jumbotron text-center">
+        <h1>Welcome to Amazon Prime Movies</h1>
+    </div>
+</body>
+</html>

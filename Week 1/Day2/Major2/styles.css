@@ -1,0 +1,44 @@
+
+.middle{
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+}
+img:hover{
+    content: url("msd.jpg");
+}
+.font-change{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.login{
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 50%;
+    width: 50%;
+}
+.button{
+    display: block;
+    float: right;
+}
+#blue{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+}
+#green{
+    color: green;
+    font-size: 20px;
+    cursor: pointer;
+}
+#username:target[data-item="user"]{
+    background: blue;
+}
+#username:target,[data-item="pass"]{
+    background: blue;
+}
+#password:target,[data-item="pass"]{
+    background: green;
+}

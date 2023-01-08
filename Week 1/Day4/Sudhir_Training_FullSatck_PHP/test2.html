@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Table</title>
+    <script>
+        function loadA(){
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function(){
+              //  alert(this.readyState)
+                if(this.readyState == 4 && this.status==200){
+                    var array = JSON.parse(xhttp.responseText);
+                    var str = "<table border=1>";
+                    str += "<thead><td>date</td><td>Name</td><td>Location</td></thead>";
+                    for(var i=0;i<array.length;i++){
+                        str+="<tr>";
+                        str+="<td>"+array[i]['date']+"</td>"+"<td>"+array[i]['name']+"</td>"+"<td>"+array[i]['location']+"</td>";
+                        str += "</tr>";
+                    }
+                    str+="</table>";
+                    document.getElementById("result").innerHTML=str;
+                }
+            }
+            xhttp.open("GET","jsonphp.php",true)
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Call PHP via AJAX" onclick=loadA()>
+    <div id="result"></div>
+</body>
+</html>

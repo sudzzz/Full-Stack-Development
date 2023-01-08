@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child</title>
+    <style>
+        .positions li:nth-child(2){
+            background-color: green;
+        }
+        [data-item="Protien"]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="positions">
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ul>
+    </div>
+    <h1>Protien Rich Vegeterian Foods</h1>
+    <ul id="info">
+        <li data-id="P1001" data-item="Protien">Quinoa</li>
+        <li data-id="P1002" data-item="Protien">Tofu</li>
+        <li data-id="P1003" data-item="Protien">Chia Seeds</li>
+        <li data-id="P1004" data-item="Protien">Oats</li>
+    </ul>
+    <h1>Fibre Rich Vegeterian Foods</h1>
+    <ol>
+        <li data-id="F1001" data-item="Fibre">Cucumber</li>
+        <li data-id="F1001" data-item="Fibre">Watermelon</li>
+        <li data-id="F1001" data-item="Fibre">Banana</li>
+    </ol>
+</body>
+</html>

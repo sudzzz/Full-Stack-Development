@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        function PickMe(){
+            var data = document.getElementById("name").value
+            document.getElementById("put").value=data
+
+            document.getElementById("result").innerHTML = document.getElementById("name").value //For div tag we use .innerHTML
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="button" id="btn" value="Hit Me" onclick=PickMe()>
+    <br>
+    <input type="text" id="put">
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "date" : "15-04-1996",
+        "name" : "Rahul Goyal",
+        "location" : "Rajasthan"
+    },
+    {
+        "date" : "18-08-1998",
+        "name" : "Sudhir Daga",
+        "location" : "West Bengal"
+    },
+    {
+        "date" : "28-12-1999",
+        "name" : "Vijay Singh",
+        "location" : "Maharashtra"
+    },
+    {
+        "date" : "29-09-1999",
+        "name" : "Abhay Singh",
+        "location" : "Howrah"
+    }
+]
