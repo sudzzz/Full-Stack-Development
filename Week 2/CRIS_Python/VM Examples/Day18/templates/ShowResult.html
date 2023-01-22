@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Result From Table Is  : <br/>
+<table>
+<tr>
+    <th></th>
+        <th></th>
+        <th></th>
+</tr>
+
+{% for f in nm %}
+    <tr>
+    {% for ff in f %}
+        <td>{{ ff }}</td><br/>
+    {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

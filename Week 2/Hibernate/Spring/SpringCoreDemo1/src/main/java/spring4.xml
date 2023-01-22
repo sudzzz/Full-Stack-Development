@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd" [
+<!ENTITY contextInclude SYSTEM "org/springframework/web/portlet/context/WEB-INF/contextInclude.xml">
+]>
+<beans>
+	<bean id="t" class="com.bean4.Traingle">
+	 <!-- <constructor-arg type="int" value="20"/> -->
+	  <constructor-arg type="String" value="RT"/>
+	 
+	</bean>
+	<!-- <bean id="t1" class="com.bean4.Traingle">
+	 <constructor-arg type="java.lang.String" value="Isosceles"/>
+	 
+	</bean> -->
+</beans>

@@ -1,0 +1,54 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <script src="Scripts/jquery-1.7.1.js"></script>
+        <script src="Scripts/jquery-ui-1.10.3.custom.js"></script>
+        <link rel="stylesheet" href="Scripts/jquery-ui.css"/>
+    <script>
+        $(function(){
+
+        });
+    </script>
+    <style>
+        p {background:Yellow;cursor:pointer}
+        p.JIMS{background:Blue}
+        span{color:red}
+        td{width: 40px;background: pink}
+    </style>
+</head>
+<body>
+<span>Welcome To Binding of Controls In Different way</span>
+<p>Click Here On This <br/>Pragraph</p>
+<input type="text" id="MyText"/>
+<span id="MyTextKey"></span>
+<script>
+    $("#MyText").bind("keypress",function(e){
+        $("#MyTextKey").html(e.keyCode);
+    });
+    $("p").bind("dblclick",function(){
+        alert('clicked');
+    });
+    $("p").bind("click",function(event){
+        var str=event.pageX + "-" + event.pageY;
+        $("span").text(str);
+        //alert('clicked');
+    });
+    $("p").bind("mouseenter  mouseleave",function(){
+        $(this).toggleClass("JIMS");
+    });
+
+</script>
+<table border="1">
+    <tr><td>Ankit</td><td>20</td><td>Noida</td></tr>
+    <tr><td>Rajat</td><td>23</td><td>Noida</td></tr>
+    <tr><td>Ravi</td><td></td><td>Noida</td></tr>
+    <tr><td>Komal</td><td>20</td><td></td></tr>
+</table>
+<script>//$("tr").find("td:eq(2)").fadeTo(3000,0.3);
+    $("td:empty").text("null").css
+    ('background','rgb(100,100,100)');
+</script>
+</body>
+</html>

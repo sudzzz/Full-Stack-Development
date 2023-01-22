@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1637103143">
+    <data-source source="LOCAL" name="Sqlite (Xerial) - createDb=sqlite3.connect(':memory:')" uuid="f35c9a0d-f9ad-4189-9f3f-6d8f033e50f3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../Sample24\createDb=sqlite3.connect(':memory:')</jdbc-url>
+    </data-source>
+  </component>
+</project>

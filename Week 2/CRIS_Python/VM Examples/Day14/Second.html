@@ -1,0 +1,37 @@
+<html>
+<head>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script>
+    //    $(document).ready(function () {
+		//alert('DONE');
+            /*$("#Btn1").click(function(){
+                alert("clicked");
+            });*/
+	  //      });
+</script>
+</head>
+<br>
+    <button id="Btn1">Click Here To Hide</button>
+    <button id="Btn2">Click Here To Show</button>
+    <p>This is Paragraph Tag Region</p>
+    <p>One More Paragraph...</p>
+    <script>
+          $("#Btn2").hide();
+          $("#Btn1").click(function(){
+                $("p").hide("slow");
+                $("#Btn1").hide("slow");
+                $("#Btn2").show("slow");
+            });
+          $("#Btn2").click(function(){
+                $("p").show("slow");
+                $("#Btn2").hide("slow");
+                $("#Btn1").show("slow");
+            });
+    </script>
+</br>
+<b>Thanks from HTML - JQUery Development Team</b>
+</body>
+</html>
+
+
+

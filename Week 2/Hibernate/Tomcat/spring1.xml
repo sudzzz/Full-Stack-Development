@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd" [
+<!ENTITY contextInclude SYSTEM "org/springframework/web/portlet/context/WEB-INF/contextInclude.xml">
+]>
+<beans>
+	<bean id="t" class="com.bean2.Traingle" >
+	 <property name="type" value="equalilateral"/>
+	 
+	</bean>
+</beans>

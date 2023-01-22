@@ -1,0 +1,56 @@
+body{
+    background-color:#edf5f5;
+}
+.bg-image{
+    margin: 0;
+    padding: 0;
+    background-image: url('ecommerce6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh
+}
+.font{
+    font-size:xx-large;
+    color: #05051c;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alignment{
+    padding-top: 40px;
+}
+.btn-bottom{
+    position:absolute;
+    margin-left: -50px;
+    left: 50%;
+    bottom: 90px;
+}
+.img-responsive{
+    height: auto;
+    width: auto;
+    margin-top : -10px;
+    max-height: 40px;
+    max-width: 40px;
+}
+footer {
+    background-color: #101010;
+    padding: 15px;
+  }
+
+.carousel-inner img {
+width: 100%; /* Set width to 100% */
+min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; 
+    }
+}
+
+.foot{
+    color : "white";
+    font-family : Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : bold;
+}
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+welcomenewone
+{% for f in nm %}
+    {% for ff in f %}
+        {{ ff }}<br/>
+    {% endfor %}
+{% endfor %}
+</body>
+</html>

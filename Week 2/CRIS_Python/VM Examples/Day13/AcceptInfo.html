@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        alert("welcome")
+        function MyFunction()
+        {
+            document.getElementById("Result").value=
+                    parseInt(document.getElementById("No1").value) +
+                    parseInt(document.getElementById("No2").value);
+        }
+        function MyFunction2()
+        {
+
+         var sel=document.getElementById("Opt");
+
+            myvar=sel.options[sel.selectedIndex].value;
+
+            alert(myvar);
+        }
+        function CallMe(t)
+        {
+            alert(t.options[t.selectedIndex].value);
+
+        }
+    </script>
+</head>
+<body>
+<form>
+<table>
+    <tr>
+        <td>Enter First No</td>
+        <td><input id="No1" required type="text"></td>
+    </tr>
+    <tr>
+        <td>Enter Second No</td>
+        <td><input id="No2" required type="text"></td>
+    </tr>
+    <tr>
+        <td>Select Option</td>
+        <td>
+            <select id="Opt">
+                <option name="SelectHere">Select Here</option>
+                <option name="India">India</option>
+                <option name="Australia">Australia</option>
+            </select>
+             <select id="Opt2" onchange="CallMe(this)">
+                <option name="SelectHere">Select Here</option>
+                <option name="India">India</option>
+                <option name="Australia">Australia</option>
+            </select>
+             <select id="Opt3" onchange="CallMe(this)">
+                <option name="SelectHere">Select Here</option>
+                <option name="Rohini">Rohini</option>
+                <option name="Noida">Noida</option>
+            </select>
+
+        </td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="MyFunction()" value="Click Here">
+        </td>
+        <td><input type="button" onclick="MyFunction2()" value="Show Option">
+        </td>
+    </tr>
+</table>
+</form>
+<textarea id="Result"></textarea>
+<div id="ResultDiv">This is DIV Tag....</div>
+<!-- this is comment way in HTML -->
+</body>
+</html>
+
+
+

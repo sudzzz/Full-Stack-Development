@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        alert("welcome")
+        function MyFunction()
+        {
+            //alert('Inside My Function');
+            document.getElementById("Result").value=
+            document.getElementById("txtUserName").value;
+            document.getElementById("ResultDiv").innerHTML+="</br>This is from Javascript";
+            alert('chk2');
+
+        }
+    </script>
+</head>
+<body>
+<form>
+<table>
+    <tr>
+        <td>User Name</td>
+        <td><input id="txtUserName" required type="text"></td>
+    </tr>
+    <tr>
+        <td>Full Name</td>
+        <td><input id="txtFullName" required type="text"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input id="txtPassword"  type="password"></td>
+    </tr>
+    <tr>
+        <td>DOJ</td>
+        <td><input id="txtDOJ" type="date"></td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td><input id="txtAge" type="number"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="MyFunction()" value="Click Here">
+        </td>
+    </tr>
+</table>
+</form>
+<textarea id="Result"></textarea>
+<div id="ResultDiv">This is DIV Tag....</div>
+<!-- this is comment way in HTML -->
+</body>
+</html>
+
+
+

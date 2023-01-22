@@ -1,0 +1,39 @@
+1. pip install django
+2. django-admin startproject MyWebsite
+3. cd MyWebsite
+4. django-admin startapp MyApp
+5. add entry of your app within settings.py
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'MyApp',
+]
+
+6. Run the application or python manage.py runserver
+7. create folder templates within your myapp and add MyApp within templates
+8. create index.html within myapp
+9. copy paste urls.py within your app and edit
+10. root urls.py
+
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('myapp.urls')),
+]
+
+11. templates under urls.py should have
+from django.contrib import admin
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.index, name='index'),
+
+]

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Welcome To Our Web Site.....
+This is our Front Page....
+
+
+{% for f in MyVal %}
+    <b>{{ f }}</b>
+{% endfor %}
+
+<form method="post" action="../Welcome_Save/">
+    {% csrf_token %}
+    <input type="text" name="UName" />
+    <input type="text" name="UPwd" />
+    <input type="submit" />
+</form>
+</body>
+</html>

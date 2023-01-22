@@ -1,0 +1,43 @@
+
+<html>
+<head>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+		alert('DONE');
+            $("#btn").click(function()
+            {
+                alert("Clicked");
+                //var val1=$("#txtname").val();
+                var val1=$("input[id='txtname']").val();
+                var val2=$("input[id='txtage']").val();
+                if(val1=='' || val2=='') {
+                    alert("Cant Be Left Blank");
+                    return;
+                }
+                $("#MyTable tr:last").after
+                ("<tr><td>" + val1 + "</td><td>"
+                        + val2 + "</td></tr>");
+            })
+	        });
+</script>
+</head>
+<br>
+    Name: <input type="text" id="txtname"/></br>
+    Age : <input type="text" id="txtage"/></br>
+          <button id="btn">Click me</button>
+            </br>
+            <div id="area">
+
+            </div>
+            <table  id="MyTable" border="1">
+                <tr><td>Name</td>
+                    <td>Age</td>
+                </tr>
+            </table>
+
+</body>
+</html>
+
+
+

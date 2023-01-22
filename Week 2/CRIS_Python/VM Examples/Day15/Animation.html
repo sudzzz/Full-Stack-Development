@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:100px ;
+            height:100px;
+            background-color: blue;
+            position:relative;
+            -webkit-animation-name:MyAnim;/*chrome-Safari-Opera*/
+            -webkit-animation-duration:4s;/*chrome-Safari-Opera*/
+            -webkit-transition:opacity 2s ease-in;
+            animation-name:MyAnim;
+            animation-duration:4s;
+            transition:opacity 2s ease-in;
+        }
+        @-webkit-keyframes MyAnim {
+            0%{background-color:black;left:0px;top:0px;opacity: 1.00}
+            25%{background-color:yellow;left:200px;top:0px;
+                opacity:0.00;}
+        }
+    </style>
+</head>
+<body>
+<div>JIMS</div>
+</body>
+</html>

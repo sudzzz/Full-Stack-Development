@@ -1,0 +1,51 @@
+AMI: first component, stands for Amazon Machine Image, it is a template of OS.
+t2.micro is a free instance and provides 1 virtual CPU with 1 GB RAM.
+1 core = 2 virtual CPUs.
+Intel Xeon: It is provided on AWS data centre that is why it is giving us ultimate performance.
+EBS Volume stands for Elastic Block Storage.(max: 30GB for free tier, and else 16TB).
+Security group is external firewall that controls traffic.
+Vm in AWS machine is known as instance.
+SSH is needed to open the security group and has port number 22.
+Https port number: 443.
+At last credential, not using password but cryptography: using private and public key: user has to download private key: 2048 bit encryption.
+CloudShell is a terminal provided by AWS and is best to connect to linux OS. 
+IAM: Identity and Access Management.
+
+Top 10 BEST Intrusion Detection Systems (IDS) [2023 Rankings]:
+#1) SolarWinds Security Event Manager
+#2) Bro
+#3) OSSEC
+#4) Snort
+#5) Suricata
+#6) Security Onion
+#7) Open WIPS-NG
+#8) Sagan
+#9) McAfee Network Security Platform
+#10) Palo Alto Networks
+
+
+Intrusion Prevention Systems (IPS):
+#1) Trend Micro TippingPoint NGIPS by Trend Micro
+#2) Cisco Secure Firewall by Cisco
+#3) Trellix Network Security by Trellix
+#4) Trellix Intrusion Prevention System by Trellix
+#5) Alert Logic Managed Detection and Response (MDR) by Alert Logic
+#6) Security Onion by Security Onion
+#7) Hillstone S-Series Intrusion Prevention System by Hillstone Networks
+#8) Secureworks Managed iSensor Network Intrusion Prevention System by Secureworks
+#9) Fidelis Network by Fidelis
+#10) SecBlade IPS by H3C
+
+EFS: Elastic File System ===>>> for linux
+FSX ===>>> for windows.
+
+
+How to configure ec2 linux instance as a web server?
+
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+ll (should be empty)
+echo "This is my first CRIS Web server for testing Jan 2023" > index.html

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <script src="Scripts/jquery-1.7.1.js"></script>
+        <script src="Scripts/jquery-ui-1.10.3.custom.js"></script>
+        <link rel="stylesheet" href="Scripts/jquery-ui.css"/>
+    <script>
+        $(function(){
+            var Myvalues=["Delhi","Bangalore",
+            "Pune","Mumbai","Chandigarh","Jaipur",
+            "Ranchi","Alwar","Ajmer"];
+
+        $("#MyInfo").autocomplete({
+            source:Myvalues
+        });
+
+        });
+    </script>
+</head>
+<body>
+    <input id="MyInfo">
+</body>
+</html>

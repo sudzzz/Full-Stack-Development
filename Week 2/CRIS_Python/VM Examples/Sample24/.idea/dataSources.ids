@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Sqlite (Xerial) - createDb=sqlite3.connect(&apos;:memory:&apos;)" uuid="f35c9a0d-f9ad-4189-9f3f-6d8f033e50f3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
